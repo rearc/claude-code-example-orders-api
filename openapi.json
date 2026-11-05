@@ -1,0 +1,23 @@
+{
+  "openapi": "3.1.0",
+  "info": { "title": "orders-api", "version": "1.0.0" },
+  "paths": {
+    "/orders": {
+      "get": { "summary": "List orders", "responses": { "200": { "description": "Orders" } } },
+      "post": { "summary": "Create an order", "responses": { "201": { "description": "Created" }, "400": { "description": "Invalid" } } }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Order": {
+        "type": "object",
+        "required": ["id", "item", "quantity"],
+        "properties": {
+          "id": { "type": "string" },
+          "item": { "type": "string" },
+          "quantity": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

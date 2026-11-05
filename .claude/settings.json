@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "deny": ["Read(./.env)", "Read(./.env.*)"]
+  },
+  "enabledPlugins": {
+    "team-standards@example-team-tools": true,
+    "orders-api-guard@example-team-tools": true
+  },
+  "extraKnownMarketplaces": {
+    "example-team-tools": {
+      "source": { "source": "github", "repo": "rearc/claude-code-example-marketplace" }
+    }
+  }
+}
