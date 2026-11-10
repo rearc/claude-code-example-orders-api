@@ -15,7 +15,8 @@ and guards, because the repo carries them itself:
 | `.claude/settings.json` | Permissions, and the plugins this repo turns on: `team-standards` and `orders-api-guard` |
 
 `orders-api-guard` blocks edits to generated code. It lives in a plugin, not in this repo's
-settings, so it fires in every session that loads this repo, including a multi-repo workspace.
+settings, so it fires when Claude starts in this repo, and a workspace that includes this repo can
+turn it on too.
 
 ## Run
 ```
@@ -23,7 +24,7 @@ python3 -m unittest discover -s tests
 python3 scripts/generate.py      # regenerate src/orders_api/generated/ from openapi.json
 ```
 
-## Plugins (once per machine)
+## Plugins (once per person, in this repo)
 ```
 claude plugin marketplace add rearc/claude-code-example-marketplace --scope project
 claude plugin install team-standards@example-team-tools --scope project
