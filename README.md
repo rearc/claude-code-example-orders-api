@@ -1,7 +1,7 @@
 # claude-code-example-orders-api
 
-A small orders API, set up as a **self-contained Claude Code agent**. Part of the
-[claude-code-example-team-setup](https://github.com/rearc/claude-code-example-team-setup) example.
+A small orders API, set up as a **self-contained Claude Code agent**. Part of a four-repo example of a team Claude Code setup, with
+[orders-web](https://github.com/rearc/claude-code-example-orders-web), [marketplace](https://github.com/rearc/claude-code-example-marketplace) and [orders-workspace](https://github.com/rearc/claude-code-example-orders-workspace).
 
 Whoever opens this repo, alone or next to other repos, gets the same instructions, procedures
 and guards, because the repo carries them itself:
